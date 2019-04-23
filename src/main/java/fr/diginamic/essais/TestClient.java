@@ -24,6 +24,10 @@ public class TestClient {
 		System.out.println("Client 3 Nnom de rue : " + client3.adresse.libelleRue);
 		System.out.println("Client 3 Code postal : " + client3.adresse.codePostal);
 		System.out.println("Client 3 Ville : " + client3.adresse.ville);
+
+		Client client4 = new Client(3210, "Racine", "Alicia",
+				new AdressePostale(25, "Rue Lamarck", 85000, "La Roche sur Yon"));
+
 	}
 
 }
