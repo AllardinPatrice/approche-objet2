@@ -2,7 +2,7 @@ package fr.diginamic.essais;
 
 import fr.diginamic.entites.AdressePostale;
 
-public class TestAttributClient {
+public class TestAttributClasse {
 
 	public static void main(String[] args) {
 		AdressePostale a = new AdressePostale(25, "Rue Lamarck", 85000, "La Roche sur Yon");
