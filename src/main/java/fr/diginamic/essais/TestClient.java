@@ -7,6 +7,7 @@ public class TestClient {
 	public static void main(String[] args) {
 		Client client1 = new Client(1, "Allaradin", "Patrice");
 		Client client2 = new Client(2, "Racine", "Luc");
+		//Vérification des valeurs assignées par le constructeur
 		System.out.println("Numéro de compte client1 : " + client1.numeroCompte);
 		System.out.println("Numéro de compte client2 : " + client2.numeroCompte);
 		System.out.println("Nom client1 : " + client1.nom);
