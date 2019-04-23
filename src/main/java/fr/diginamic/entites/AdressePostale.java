@@ -1,10 +1,10 @@
 package fr.diginamic.entites;
 
 public class AdressePostale {
-	int numeroRue;
-	String libelleRue;
-	int codePostal;
-	String ville;	
+	public int numeroRue;
+	public	String libelleRue;
+	public int codePostal;
+	public String ville;	
 
 	public static void main(String[] args) {
 

@@ -1,9 +1,9 @@
 package fr.diginamic.entites;
 
 public class Personne {
-	String nom;
-	String prenom;
-	AdressePostale adressePostale;
+	public String nom;
+	public String prenom;
+	public AdressePostale adressePostale;
 	
 	
 	public static void main(String[] args) {
