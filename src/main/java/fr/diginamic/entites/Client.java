@@ -4,6 +4,15 @@ public class Client {
 	public int numeroCompte;
 	public String nom;
 	public String prenom;
+	public AdressePostale adresse;
+
+	public Client(int numeroCompte, String nom, String prenom, AdressePostale adresse) {
+		// this.numeroCompte = numeroCompte;
+		// this.nom = nom;
+		// this.prenom = prenom;
+		this(numeroCompte, nom, prenom);
+		this.adresse = adresse;
+	}
 
 	public Client(int param, String param2, String param3) {
 		numeroCompte = param;
