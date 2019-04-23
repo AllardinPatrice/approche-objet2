@@ -24,4 +24,31 @@ public class Client {
 		System.out.println("Prénom : " + prenom);
 	}
 
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public String getNomMajuscules() {
+		return nom.toUpperCase();
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public int getNumeroCompte() {
+		return numeroCompte;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public void setNumeroCompte(int numeroCompte) {
+		this.numeroCompte = numeroCompte;
+	}
 }

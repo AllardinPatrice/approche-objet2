@@ -28,6 +28,17 @@ public class TestClient {
 		Client client4 = new Client(3210, "Racine", "Alicia",
 				new AdressePostale(25, "Rue Lamarck", 85000, "La Roche sur Yon"));
 
+		System.out.println("Nom client4 : " + client4.getNom() + " Prénom client 4 : " + client4.getPrenom()
+				+ " Numéro compte : " + client4.getNumeroCompte());
+		client4.setNom("Baguelin");
+		client4.setPrenom("Melody");
+		System.out.println("Nom client4 : " + client4.getNomMajuscules() + " Prénom client 4 : " + client4.getPrenom());
+		client4.setNumeroCompte(50000);
+		System.out.println("Compte client4 : " + client4.numeroCompte);
+		System.out.println("Nom client4 : " + client4.getNom() + " Prénom client 4 : " + client4.getPrenom());
+		System.out.println("Nom client4 : " + client4.getNom() + " Prénom client 4 : " + client4.getPrenom()
+				+ " Numéro compte : " + client4.getNumeroCompte());
+
 	}
 
 }
