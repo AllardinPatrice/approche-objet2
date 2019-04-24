@@ -1,9 +1,13 @@
 package fr.diginamic.operations;
 
 public class CalculMoyenne {
-	public double[] tab = new double[0];
-	public int index = 0;
-	public int tailleTableau = 0;
+	private double[] tab = new double[0];
+	private int index = 0;
+	private int tailleTableau = 0;
+
+	public double[] getTab() {
+		return tab;
+	}
 
 	public CalculMoyenne(int tailleTableau) {
 		if (tailleTableau > 0) {
@@ -29,5 +33,25 @@ public class CalculMoyenne {
 			moyenne += tab[i] / tailleTableau;
 		}
 		return moyenne;
+	}
+
+	public void setTab(double[] tab) {
+		this.tab = tab;
+	}
+
+	public int getIndex() {
+		return index;
+	}
+
+	public void setIndex(int index) {
+		this.index = index;
+	}
+
+	public int getTailleTableau() {
+		return tailleTableau;
+	}
+
+	public void setTailleTableau(int tailleTableau) {
+		this.tailleTableau = tailleTableau;
 	}
 }
