@@ -2,6 +2,7 @@ package fr.diginamic.essais;
 
 import fr.diginamic.entites.Cercle;
 import fr.diginamic.utils.CercleFactory;
+import fr.diginamic.utils.CercleService;
 
 public class TestCercle {
 
@@ -16,6 +17,10 @@ public class TestCercle {
 		Cercle c3 = CercleFactory.creerCercle(2.5);
 		System.out.println("Périmètre c3 : " + c3.perimetreCercle());
 		System.out.println("Surface c3 : " + c3.surfaceCercle());
+
+		Cercle c4 = new Cercle(10);
+		CercleService.doubler(c4);
+		System.out.println("Rayon cercle doublé : " + c4.getRayon());
 
 	}
 
