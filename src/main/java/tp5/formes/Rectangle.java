@@ -18,7 +18,6 @@ public class Rectangle extends Forme {
 	 * @param largeur
 	 */
 	public Rectangle(double longueur, double largeur) {
-		super();
 		this.longueur = longueur;
 		this.largeur = largeur;
 	}
