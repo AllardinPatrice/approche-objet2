@@ -1,6 +1,6 @@
 package tp5.utils;
 
-import tp5.formes.Forme;
+import tp5.entites.Forme;
 
 /**
  * 

@@ -1,8 +1,8 @@
 package tp5.utils;
 
-import tp5.formes.Carre;
-import tp5.formes.Cercle;
-import tp5.formes.Rectangle;
+import tp5.entites.Carre;
+import tp5.entites.Cercle;
+import tp5.entites.Rectangle;
 
 /**
  * Test des méthodes liées aux formes

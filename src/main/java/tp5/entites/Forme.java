@@ -1,4 +1,4 @@
-package tp5.formes;
+package tp5.entites;
 
 /**
  * Forme géométrique
