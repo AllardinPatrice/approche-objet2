@@ -20,7 +20,7 @@ public class TestCercle {
 
 		Cercle c4 = new Cercle(10);
 		CercleService.doubler(c4);
-		System.out.println("Rayon cercle doublé : " + c4.getRayon());
+		System.out.println("Rayon cercle doublé par référence (pas besoin de return) : " + c4.getRayon());
 
 	}
 
