@@ -1,8 +1,9 @@
-package tp5.utils;
+package tp5.essais;
 
 import tp5.entites.Carre;
 import tp5.entites.Cercle;
 import tp5.entites.Rectangle;
+import tp5.utils.AffichageForme;
 
 /**
  * Test des méthodes liées aux formes
