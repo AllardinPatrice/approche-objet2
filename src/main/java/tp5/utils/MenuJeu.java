@@ -38,7 +38,7 @@ public class MenuJeu {
 	 * @param h1
 	 */
 	public static void afficherScore(Hero h1) {
-		System.out.println("Le score du héro est : " + h1.getScore());
+		System.out.println("Le score du héros est : " + h1.getScore());
 	}
 
 }

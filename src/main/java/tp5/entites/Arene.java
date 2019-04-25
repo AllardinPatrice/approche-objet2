@@ -30,14 +30,18 @@ public class Arene {
 				h1.setScore(h1.getScore() + 1);
 		} else if (valeur == 2) {
 			// Gobelin
+			// Création de gobelin
 			Gobelin g1 = new Gobelin();
+			// Combat de gobelin
 			combattreCreatureConnue(h1, g1);
 			// Incrément ou non du nombre de points de vie
 			if (h1.getPointsDeVie() > 0)
 				h1.setScore(h1.getScore() + 2);
 		} else if (valeur == 3) {
 			// Troll
+			// Création de troll
 			Troll t1 = new Troll();
+			// Combat de troll
 			combattreCreatureConnue(h1, t1);
 			// Incrément ou non du nombre de points de vie
 			if (h1.getPointsDeVie() > 0)
@@ -59,15 +63,19 @@ public class Arene {
 			int frappeHero = h1.getForce() + (int) (Math.random() * 10) + 1;
 			int frappeCreature = cc1.getForce() + (int) (Math.random() * 10) + 1;
 			if (frappeHero >= frappeCreature) {
-				System.out.println("Hero Remporte le tour");
+				System.out.println("Héros Remporte le tour");
 				cc1.setPointsDeVie(cc1.getPointsDeVie() - frappeHero + frappeCreature);
 			} else {
 				System.out.println("Creature Remporte le tour");
 				h1.setPointsDeVie(h1.getPointsDeVie() - frappeCreature + frappeHero);
 			}
-			System.out.println("Points de vie héro : " + h1.getPointsDeVie());
+			System.out.println("Points de vie héros : " + h1.getPointsDeVie());
 			System.out.println("Points de vie créature : " + cc1.getPointsDeVie());
 		}
+		if (h1.getPointsDeVie() > 0)
+			System.out.println("Le héros a gagné");
+		else
+			System.out.println("Le héros a perdu");
 
 	}
 }
