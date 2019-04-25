@@ -71,6 +71,12 @@ public class Maison {
 		return superficie;
 	}
 
+	/**
+	 * Récupère le nombre de pièces par type
+	 * 
+	 * @param type
+	 * @return
+	 */
 	public int getNbPiecesParTypePiece(String type) {
 		int nbPiece = 0;
 		for (int i = 0; i < tabPiece.length; i++) {
