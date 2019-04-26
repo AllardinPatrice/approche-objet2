@@ -24,7 +24,7 @@ public class TestMaison {
 		m1.ajouterPiece(new Chambre(10, 0));
 		m1.ajouterPiece(new Chambre(30, 2));
 		// Affichage des superficies
-		System.out.println("Superficie totale : " + m1.getSuperficieTotale());
+		System.out.println("Superficie totale : " + m1.calculerSurface());
 		System.out.println("Superficie totale par étage : " + m1.getSuperficieTotaleParEtage(0));
 		System.out.println("Superficie totale par type : Chambre : " + m1.getSuperficieParTypePiece("Chambre"));
 		// Affichage du nombre de pièces par type

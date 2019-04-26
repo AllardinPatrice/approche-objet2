@@ -1,12 +1,14 @@
 package tp5.entites;
 
+import tp6.entites.ISurface;
+
 /**
  * Classe Maison
  * 
  * @author Patrice
  *
  */
-public class Maison {
+public class Maison implements ISurface {
 	/**
 	 * Tableau des pièces
 	 */
@@ -31,7 +33,7 @@ public class Maison {
 	 * 
 	 * @return
 	 */
-	public double getSuperficieTotale() {
+	public double calculerSurface() {
 		double superficie = 0.0;
 		for (int i = 0; i < tabPiece.length; i++) {
 			superficie += tabPiece[i].getSuperficie();

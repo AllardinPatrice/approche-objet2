@@ -1,12 +1,14 @@
 package tp5.entites;
 
+import tp6.entites.ISurface;
+
 /**
  * Forme géométrique
  * 
  * @author Patrice
  *
  */
-public abstract class Forme {
+public abstract class Forme implements ISurface {
 	/**
 	 * Calcul de surface de forme
 	 * 
