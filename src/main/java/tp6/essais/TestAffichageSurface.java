@@ -4,6 +4,7 @@ import tp5.entites.Carre;
 import tp5.entites.Chambre;
 import tp5.entites.Maison;
 import tp5.entites.Rectangle;
+import tp5.entites.Wc;
 import tp6.entites.AffichageSurface;
 
 /**
@@ -24,6 +25,7 @@ public class TestAffichageSurface {
 		 */
 		Maison m1 = new Maison();
 		m1.ajouterPiece(new Chambre(10, 0));
+		m1.ajouterPiece(new Wc(5, 1));
 		/**
 		 * Affichage de la surface de la maison
 		 */
@@ -38,7 +40,7 @@ public class TestAffichageSurface {
 		 * Affichage des formes
 		 */
 		as1.afficher(r1);
-		as1.afficher(r1);
+		as1.afficher(c2);
 
 	}
 
