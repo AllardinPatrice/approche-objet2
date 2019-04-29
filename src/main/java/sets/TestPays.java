@@ -103,7 +103,7 @@ public class TestPays {
 		System.out.println("Suppression Pays : " + paysPlusPetitPIB.getNom() + " Nombre d'habitants : "
 				+ paysPlusPetitPIB.getNbHabitants() + " PIB total : "
 				+ paysPlusPetitPIB.getNbHabitants() * paysPlusPetitPIB.getPibHabitant());
-		sp.remove(paysPlusPetitPIB);
+		System.out.println(sp.remove(paysPlusPetitPIB));
 
 		/**
 		 * Affichage du résultat
