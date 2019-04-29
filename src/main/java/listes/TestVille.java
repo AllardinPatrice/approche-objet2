@@ -1,6 +1,7 @@
 package listes;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Tests sur la classe Ville
@@ -14,7 +15,7 @@ public class TestVille {
 		/**
 		 * Création de la liste des villes
 		 */
-		ArrayList<Ville> alv = new ArrayList<Ville>();
+		List<Ville> alv = new ArrayList<Ville>();
 		/**
 		 * Ajout des différentes villes
 		 */

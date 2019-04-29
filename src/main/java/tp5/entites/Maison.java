@@ -1,6 +1,7 @@
 package tp5.entites;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import tp6.entites.ISurface;
 
@@ -16,7 +17,7 @@ public class Maison implements ISurface {
 	 * Liste des pièces
 	 */
 	// private Piece[] tabPiece = new Piece[0];
-	private ArrayList<Piece> alp;
+	private List<Piece> alp;
 
 	/**
 	 * Ajout de pièce dans la maison
