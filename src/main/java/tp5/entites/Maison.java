@@ -1,9 +1,12 @@
 package tp5.entites;
 
+import java.util.ArrayList;
+
 import tp6.entites.ISurface;
 
 /**
- * Classe Maison
+ * Classe Maison Mise en commentaire de tous les éléments inutiles en utilisant
+ * un ArrayList
  * 
  * @author Patrice
  *
@@ -12,7 +15,8 @@ public class Maison implements ISurface {
 	/**
 	 * Tableau des pièces
 	 */
-	private Piece[] tabPiece = new Piece[0];
+	// private Piece[] tabPiece = new Piece[0];
+	private ArrayList<Piece> alp;
 
 	/**
 	 * Ajout de pièce dans la maison
@@ -20,12 +24,13 @@ public class Maison implements ISurface {
 	 * @param piece
 	 */
 	public void ajouterPiece(Piece piece) {
-		Piece[] tabPieceTmp = new Piece[tabPiece.length + 1];
-		for (int i = 0; i < tabPiece.length; i++) {
-			tabPieceTmp[i] = tabPiece[i];
-		}
-		tabPieceTmp[tabPieceTmp.length - 1] = piece;
-		tabPiece = tabPieceTmp;
+		// Piece[] tabPieceTmp = new Piece[tabPiece.length + 1];
+		// for (int i = 0; i < tabPiece.length; i++) {
+		// tabPieceTmp[i] = tabPiece[i];
+		// }
+		// tabPieceTmp[tabPieceTmp.length - 1] = piece;
+		// tabPiece = tabPieceTmp;
+		alp.add(piece);
 	}
 
 	/**
@@ -35,8 +40,10 @@ public class Maison implements ISurface {
 	 */
 	public double calculerSurface() {
 		double superficie = 0.0;
-		for (int i = 0; i < tabPiece.length; i++) {
-			superficie += tabPiece[i].getSuperficie();
+		// for (int i = 0; i < tabPiece.length; i++) {
+		for (int i = 0; i < alp.size(); i++) {
+			// superficie += tabPiece[i].getSuperficie();
+			superficie += alp.get(i).getSuperficie();
 		}
 		return superficie;
 	}
@@ -49,12 +56,23 @@ public class Maison implements ISurface {
 	 */
 	public double getSuperficieTotaleParEtage(int etage) {
 		double superficie = 0.0;
-		for (int i = 0; i < tabPiece.length; i++) {
-			if (etage == tabPiece[i].getNumeroEtage()) {
-				superficie += tabPiece[i].getSuperficie();
+		// for (int i = 0; i < tabPiece.length; i++) {
+		for (int i = 0; i < alp.size(); i++) {
+			// if (etage == tabPiece[i].getNumeroEtage()) {
+			if (etage == alp.get(i).getNumeroEtage()) {
+				// superficie += tabPiece[i].getSuperficie();
+				superficie += alp.get(i).getSuperficie();
 			}
 		}
 		return superficie;
+	}
+
+	/**
+	 * Constructeur de maison
+	 * 
+	 */
+	public Maison() {
+		alp = new ArrayList<Piece>();
 	}
 
 	/**
@@ -65,9 +83,12 @@ public class Maison implements ISurface {
 	 */
 	public double getSuperficieParTypePiece(String type) {
 		double superficie = 0.0;
-		for (int i = 0; i < tabPiece.length; i++) {
-			if (type.equals(tabPiece[i].getClass().getSimpleName())) {
-				superficie += tabPiece[i].getSuperficie();
+		// for (int i = 0; i < tabPiece.length; i++) {
+		for (int i = 0; i < alp.size(); i++) {
+			// if (type.equals(tabPiece[i].getClass().getSimpleName())) {
+			if (type.equals(alp.get(i).getClass().getSimpleName())) {
+				// superficie += tabPiece[i].getSuperficie();
+				superficie += alp.get(i).getSuperficie();
 			}
 		}
 		return superficie;
@@ -81,8 +102,10 @@ public class Maison implements ISurface {
 	 */
 	public int getNbPiecesParTypePiece(String type) {
 		int nbPiece = 0;
-		for (int i = 0; i < tabPiece.length; i++) {
-			if (type.equals(tabPiece[i].getClass().getSimpleName())) {
+		// for (int i = 0; i < tabPiece.length; i++) {
+		for (int i = 0; i < alp.size(); i++) {
+			// if (type.equals(tabPiece[i].getClass().getSimpleName())) {
+			if (type.equals(alp.get(i).getClass().getSimpleName())) {
 				nbPiece++;
 			}
 		}
@@ -90,12 +113,12 @@ public class Maison implements ISurface {
 
 	}
 
-	public Piece[] getTabPiece() {
-		return tabPiece;
-	}
+	// public Piece[] getTabPiece() {
+	// return tabPiece;
+	// }
 
-	public void setTabPiece(Piece[] tabPiece) {
-		this.tabPiece = tabPiece;
-	}
+	// public void setTabPiece(Piece[] tabPiece) {
+	// this.tabPiece = tabPiece;
+	// }
 
 }
