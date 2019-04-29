@@ -13,7 +13,7 @@ import tp6.entites.ISurface;
  */
 public class Maison implements ISurface {
 	/**
-	 * Tableau des pièces
+	 * Liste des pièces
 	 */
 	// private Piece[] tabPiece = new Piece[0];
 	private ArrayList<Piece> alp;
