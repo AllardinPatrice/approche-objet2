@@ -60,15 +60,12 @@ public class Pays {
 		if (getClass() != obj.getClass())
 			return false;
 		Pays other = (Pays) obj;
-		if (nbHabitants != other.nbHabitants)
-			return false;
 		if (nom == null) {
 			if (other.nom != null)
 				return false;
 		} else if (!nom.equals(other.nom))
 			return false;
-		if (pibHabitant != other.pibHabitant)
-			return false;
 		return true;
 	}
+
 }
