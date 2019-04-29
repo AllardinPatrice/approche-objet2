@@ -19,6 +19,9 @@ public class CalculMoyenne {
 	// return tab;
 	// }
 
+	/**
+	 * Constructeur du calculateur de moyenne
+	 */
 	public CalculMoyenne(/* int tailleTableau */) {
 		// if (tailleTableau > 0) {
 		// this.tailleTableau = tailleTableau;
@@ -30,6 +33,11 @@ public class CalculMoyenne {
 		// }
 	}
 
+	/**
+	 * Ajout d'une valeur au tableau de calcul de moyenne
+	 * 
+	 * @param param
+	 */
 	public void ajout(double param) {
 		alcm.add(param);
 		// if (index < tailleTableau) {
@@ -40,6 +48,11 @@ public class CalculMoyenne {
 
 	}
 
+	/**
+	 * Calcul de moyenne effectif
+	 * 
+	 * @return
+	 */
 	public double calcul() {
 		double moyenne = 0.0;
 		// for (int i = 0; i < tailleTableau; i++) {
