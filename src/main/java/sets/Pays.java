@@ -52,14 +52,6 @@ public class Pays {
 	}
 
 	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((nom == null) ? 0 : nom.hashCode());
-		return result;
-	}
-
-	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -68,10 +60,14 @@ public class Pays {
 		if (getClass() != obj.getClass())
 			return false;
 		Pays other = (Pays) obj;
+		if (nbHabitants != other.nbHabitants)
+			return false;
 		if (nom == null) {
 			if (other.nom != null)
 				return false;
 		} else if (!nom.equals(other.nom))
+			return false;
+		if (pibHabitant != other.pibHabitant)
 			return false;
 		return true;
 	}
