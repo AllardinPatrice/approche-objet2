@@ -1,5 +1,6 @@
 package sets;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -16,7 +17,7 @@ public class TestPays {
 		/**
 		 * Création du set de pays
 		 */
-		Set<Pays> sp = new HashSet<Pays>();
+		ArrayList<Pays> sp = new ArrayList<Pays>();
 		/**
 		 * Ajout des valeurs de pays
 		 */
