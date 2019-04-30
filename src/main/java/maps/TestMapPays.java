@@ -46,17 +46,41 @@ public class TestMapPays {
 		/**
 		 * Listage des différentes valeurs de la map
 		 */
-		Iterator<Pays> values = msp.keySet().iterator();
+		Iterator<Pays> values = msp.values().iterator();
 		/**
 		 * Affichage de chaque valeur
 		 */
+		Pays paysMoinsHabitants = null;
+		Long nbMoinsHabitants = Long.MAX_VALUE;
 		while (values.hasNext()) {
-			System.out.println(values.next());
+			Pays paysTmp = values.next();
+			System.out.println("Pays : Nom : " + paysTmp.getNom() + " Nb Habitants : " + paysTmp.getNbHabitants()
+					+ " PIB/H. : " + paysTmp.getPibHabitant());
+			if (nbMoinsHabitants > paysTmp.getNbHabitants()) {
+				nbMoinsHabitants = paysTmp.getNbHabitants();
+				paysMoinsHabitants = paysTmp;
+			}
 		}
 
 		/**
 		 * Suppression du pays qui a le moins d'habitants
 		 */
+		System.out.println("Suppression du pays avec le moins d'habitants : " + paysMoinsHabitants.getNom());
+		msp.remove(paysMoinsHabitants.getNom());
+
+		/**
+		 * Affichage de la liste
+		 */
+		/**
+		 * Listage des clés de la map
+		 */
+		keys = msp.keySet().iterator();
+		/**
+		 * Affichage de chaque clé
+		 */
+		while (keys.hasNext()) {
+			System.out.println(keys.next());
+		}
 
 	}
 
