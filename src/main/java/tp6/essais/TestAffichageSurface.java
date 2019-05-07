@@ -5,6 +5,7 @@ import tp5.entites.Chambre;
 import tp5.entites.Maison;
 import tp5.entites.Rectangle;
 import tp5.entites.Wc;
+import tp5.utils.MaisonException;
 import tp6.entites.AffichageSurface;
 
 /**
@@ -24,8 +25,15 @@ public class TestAffichageSurface {
 		 * Création d'une maison
 		 */
 		Maison m1 = new Maison();
-		m1.ajouterPiece(new Chambre(10, 0));
-		m1.ajouterPiece(new Wc(5, 1));
+
+		try {
+			// Ajout de pièces
+			m1.ajouterPiece(new Chambre(10, 0));
+			m1.ajouterPiece(new Wc(5, 1));
+		} catch (MaisonException e) {
+			System.out.println(e.getMessage());
+		}
+
 		/**
 		 * Affichage de la surface de la maison
 		 */

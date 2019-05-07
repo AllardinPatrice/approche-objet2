@@ -3,6 +3,7 @@ package tp5.entites;
 import java.util.ArrayList;
 import java.util.List;
 
+import tp5.utils.MaisonException;
 import tp6.entites.ISurface;
 
 /**
@@ -24,7 +25,9 @@ public class Maison implements ISurface {
 	 * 
 	 * @param piece
 	 */
-	public void ajouterPiece(Piece piece) {
+	public void ajouterPiece(Piece piece) throws MaisonException {
+		if (piece == null)
+			throw new MaisonException("Exception de pièce de maison nulle");
 		// Piece[] tabPieceTmp = new Piece[tabPiece.length + 1];
 		// for (int i = 0; i < tabPiece.length; i++) {
 		// tabPieceTmp[i] = tabPiece[i];
